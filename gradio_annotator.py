@@ -93,7 +93,7 @@ with block:
             resolution = gr.Slider(label="resolution", minimum=256, maximum=1024, value=512, step=64)
             run_button = gr.Button(label="Run")
         with gr.Column():
-            gallery = gr.Gallery(label="Generated images", show_label=False).style(height="auto")
+            gallery = gr.Gallery(label="Generated images", show_label=False, height="auto")
     run_button.click(fn=canny, inputs=[input_image, resolution, low_threshold, high_threshold], outputs=[gallery])
 
     with gr.Row():
@@ -104,7 +104,7 @@ with block:
             resolution = gr.Slider(label="resolution", minimum=256, maximum=1024, value=512, step=64)
             run_button = gr.Button(label="Run")
         with gr.Column():
-            gallery = gr.Gallery(label="Generated images", show_label=False).style(height="auto")
+            gallery = gr.Gallery(label="Generated images", show_label=False, height="auto")
     run_button.click(fn=hed, inputs=[input_image, resolution], outputs=[gallery])
 
     with gr.Row():
@@ -117,7 +117,7 @@ with block:
             resolution = gr.Slider(label="resolution", minimum=256, maximum=1024, value=384, step=64)
             run_button = gr.Button(label="Run")
         with gr.Column():
-            gallery = gr.Gallery(label="Generated images", show_label=False).style(height="auto")
+            gallery = gr.Gallery(label="Generated images", show_label=False, height="auto")
     run_button.click(fn=mlsd, inputs=[input_image, resolution, value_threshold, distance_threshold], outputs=[gallery])
 
     with gr.Row():
@@ -129,7 +129,7 @@ with block:
             resolution = gr.Slider(label="resolution", minimum=256, maximum=1024, value=384, step=64)
             run_button = gr.Button(label="Run")
         with gr.Column():
-            gallery = gr.Gallery(label="Generated images", show_label=False).style(height="auto")
+            gallery = gr.Gallery(label="Generated images", show_label=False, height="auto")
     run_button.click(fn=midas, inputs=[input_image, resolution, alpha], outputs=[gallery])
 
     with gr.Row():
@@ -141,7 +141,7 @@ with block:
             resolution = gr.Slider(label="resolution", minimum=256, maximum=1024, value=512, step=64)
             run_button = gr.Button(label="Run")
         with gr.Column():
-            gallery = gr.Gallery(label="Generated images", show_label=False).style(height="auto")
+            gallery = gr.Gallery(label="Generated images", show_label=False, height="auto")
     run_button.click(fn=openpose, inputs=[input_image, resolution, hand], outputs=[gallery])
 
 
@@ -153,7 +153,7 @@ with block:
             resolution = gr.Slider(label="resolution", minimum=256, maximum=1024, value=512, step=64)
             run_button = gr.Button(label="Run")
         with gr.Column():
-            gallery = gr.Gallery(label="Generated images", show_label=False).style(height="auto")
+            gallery = gr.Gallery(label="Generated images", show_label=False, height="auto")
     run_button.click(fn=uniformer, inputs=[input_image, resolution], outputs=[gallery])
 
 
